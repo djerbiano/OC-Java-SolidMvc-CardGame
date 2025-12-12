@@ -1,0 +1,21 @@
+# Fichiers compilés
+*.class
+*.jar
+*.war
+
+# Dossiers d'IDE/OS
+bin/
+build/
+out/
+.metadata/
+.settings/
+.project
+.classpath
+.idea/
+.vscode/
+.DS_Store
+
+# Logs et fichiers temporaires
+*.log
+tmp/
+*.tmp
