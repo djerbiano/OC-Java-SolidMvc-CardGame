@@ -25,4 +25,8 @@ public class Player {
 		return hand.removeCard();
 	}
 
+	public String getName() {
+		return name;
+	}
+
 }
