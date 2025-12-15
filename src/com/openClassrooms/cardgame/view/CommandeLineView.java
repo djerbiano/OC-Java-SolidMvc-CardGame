@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import com.openClassrooms.cardgame.controller.GameController;
 
-public class View {
+public class CommandeLineView implements GameViewable {
 
 	GameController controller;
 	Scanner keyBoard = new Scanner(System.in);
@@ -33,9 +33,9 @@ public class View {
 	}
 
 	public void promptForNewGame() {
-		System.out.println("Press enter to reveal cards");
-		keyBoard.nextLine();
-		controller.startGame();
+		System.out.println("Press enter to deal again or +q to exit");
+		controller.nextAction(keyBoard.nextLine());
+
 
 	}
 
